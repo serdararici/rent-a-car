@@ -7,5 +7,5 @@ import kodlama.io.rentACar.entities.concretes.Brand;
 
 @Repository
 public interface BrandRepository extends JpaRepository<Brand, Integer>{
-	boolean existByName(String name);    // spring jpa keywords
+	boolean existsByName(String name);    // spring jpa keywords
 }
