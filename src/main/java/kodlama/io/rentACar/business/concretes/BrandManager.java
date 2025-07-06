@@ -71,7 +71,7 @@ public class BrandManager implements BrandService{
 		brand.setName(createBrandRequest.getName());
 		*/
 		
-		this.brandBusinessRules.checkIfBrandNameExist(createBrandRequest.getName());
+		this.brandBusinessRules.checkIfBrandNameExists(createBrandRequest.getName());
 		
 		// used model mapper
 		Brand brand = this.modelMapperService.forRequest().map(createBrandRequest, Brand.class);

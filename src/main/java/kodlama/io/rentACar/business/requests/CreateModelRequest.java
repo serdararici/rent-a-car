@@ -2,6 +2,7 @@ package kodlama.io.rentACar.business.requests;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,6 +17,6 @@ public class CreateModelRequest {
 	@Size(min = 3, max = 20)
 	private String name;
 	@NotNull
-	@NotBlank
+	@Positive(message = "Brand ID must be positive")
 	private int brandId;
 }
