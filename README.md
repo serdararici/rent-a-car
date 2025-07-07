@@ -91,6 +91,15 @@ Includes one-to-many relationship with `Brand`.
 - System internals are not exposed in error responses  
 
 ---
+
+## 📸 Swagger UI Preview
+
+Here's a preview of the automatically generated Swagger UI documenting all API endpoints:
+
+![Swagger UI Screenshot](https://github.com/serdararici/rent-a-car/blob/main/images/Swagger_ui.JPG)
+
+---
+
 ## 🛠️ How to Run
 
 1. Clone the repository  
